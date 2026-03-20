@@ -1,5 +1,5 @@
 // examples/basic-usage.ts
-import { GlanceClient, GlanceApiError } from "@glance/sdk";
+import { GlanceClient, GlanceApiError } from "@glance-il/sdk";
 
 const glance = new GlanceClient({
   apiKey: process.env.GLANCE_API_KEY!,

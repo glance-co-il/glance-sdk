@@ -1,5 +1,5 @@
 // examples/create-invoice.ts
-import { GlanceClient } from "@glance/sdk";
+import { GlanceClient } from "@glance-il/sdk";
 
 const glance = new GlanceClient({
   apiKey: process.env.GLANCE_API_KEY!,

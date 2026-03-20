@@ -1,17 +1,17 @@
-# @glance/sdk
+# @glance-il/sdk
 
 Official TypeScript SDK for the [Glance](https://www.glance.co.il) API — a fully-typed, ergonomic client for invoicing, inventory, and business management.
 
 ## Installation
 
 ```bash
-npm install @glance/sdk
+npm install @glance-il/sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { GlanceClient } from "@glance/sdk";
+import { GlanceClient } from "@glance-il/sdk";
 
 const glance = new GlanceClient({
   apiKey: process.env.GLANCE_API_KEY!,
@@ -97,7 +97,7 @@ import {
   GlanceNotFoundError,
   GlanceValidationError,
   GlanceRateLimitError,
-} from "@glance/sdk";
+} from "@glance-il/sdk";
 
 try {
   const { data } = await glance.clients.get("non-existent");
@@ -128,7 +128,7 @@ import type {
   CreateDocumentParams,
   Product,
   PaginationMeta,
-} from "@glance/sdk";
+} from "@glance-il/sdk";
 
 function processClient(client: Client): void {
   console.log(`${client.name} — ${client.email}`);
